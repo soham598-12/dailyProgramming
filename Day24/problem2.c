@@ -4,18 +4,19 @@
 #include <stdlib.h>
 
 int main() {
+
     int n;
     scanf("%d",&n);
     int a[n];
+    long long sum=0;
     for(int i=0;i<=n-1;++i){
         scanf("%d",&a[i]);
     }
-    int max=a[0];
     for(int j=0;j<=n-1;++j){
-        if(a[j] > max){
-            max=a[j];
-        }
+        sum=sum+a[j];
     }
-    printf("%d",max);
+    long double z=(long double)sum/n;
+    printf("%llf",z);
+    
     return 0;
 }
