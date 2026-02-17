@@ -1,6 +1,6 @@
 // Codeforces Array colouring //
 #include <stdio.h>
- 
+
 int main()
 {
     int test;
@@ -25,9 +25,7 @@ int main()
         }
         else{
             printf("No\n");
-        }
-        
+        } 
     }
- 
     return 0;
 }
